@@ -1,5 +1,9 @@
 ﻿using System;
 
+using System.Collections.Generic;
+
+using System.Linq;
+
 
 namespace OddEvenNumbersApp
 {
@@ -36,33 +40,15 @@ namespace OddEvenNumbersApp
 
 
 
-        static bool ISEven(int number)
-        {
-
-            if( number % 2 == 0 )
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
+        static bool ISEven(int number) => number % 2 == 0;
+       
 
 
-        static bool IsOdd(int number)
-        {
+        static bool IsOdd(int number) => !ISEven(number);
 
-            if(number % 2 != 0 )
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+       
     }
+
+
 
 }
